@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker Crud</title>
+</head>
+<body>
+    <section>
+        <h1>Monthly Budget</h1>
+        <section class="calculation-table">
+            <div class="left">
+                <h2>Income</h2>
+                <form action="">
+                    <input type="text" id="Income-source" placeholder="Income Source" name="Income-source" required>
+                    <input type="number" name="Income-amount" id="Income-amount" required>
+                    <button id="income-add-btn" type="button">Add</button>
+                </form>
+                <ul id="Income-list">
+                    <!-- <li>Tamim <span>500</span></li>
+                    <li>Tamim <span>500</span></li>
+                    <li>Tamim <span>500</span></li> -->
+                </ul>
+                <p>Total: <span id="total-income-amount"></span> tk</p>
+            </div>
+            <div class="right">
+                <h2>Expenses</h2>
+                <form action="">
+                    <input type="text" id="Expense-Source" placeholder="Expense Source" name="Expense-Source" required>
+                    <input type="number" name="Expense-amount" id="Expense-amount" required>
+                    <button id="Expense-add-btn" type="button">Add</button>
+                </form>
+                <ul id="Expense-list">
+                    <!-- <li>Tamim <span>500</span></li>
+                    <li>Tamim <span>500</span></li>
+                    <li>Tamim <span>500</span></li> -->
+                </ul>
+                <p>Total: 0 tk</p>
+            </div>
+        </section>
+        <h3>Savings: <span id="total-expense-amount"></span> tk</h3> 
+        <button type="button" id="reset">Reset</button>
+    </section>
+    <script src="/script.js"></script>
+</body>
+</html>
